@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo_hmif.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Edukasi - WiseParenting</title>
+</head>
+<body>
+  <header class="container">
+    <div id="nav-left">
+      <a href="home.html"><img class="logo" src="assets/logo-2.png" alt=""></a>
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars" id="fa-bars"></i>
+      </button>
+      <button class="close-hamburger" id="close-hamburger">
+        <i class="fas fa-times" id="fa-bars"></i>
+      </button>
+    </div>
+    <nav class="nav-list" id="nav-list">
+      <ul>
+        <li><a href="home.html" class="">Beranda</a></li>
+        <li><a href="edukasi.html" class="active">Edukasi</a></li>
+      </ul>
+      <button>
+        Login
+      </button>
+    </nav>
+  </header>
+  <section class="hero-section container">
+    <div class="hero-left">
+      <h1>Edukasi WiseParenting</h1>
+      <div class="tagline">
+        <span>‘‘</span>
+        <p>Wujudkan Parenting Bijak <br>
+          <span>Menuju Generasi Unggul!</span>
+        </p>
+      </div>
+      <!-- <button class="button cta-button" onclick="location='#divisi'">
+        <span>Lihat Divisi</span>
+      </button> -->
+    </div>
+    <div class="hero-right">
+      <img src="assets/logoif1.png" alt="">
+      <img src="assets/logo-2.png" alt="">
+    </div>
+  </section>
+  <div class="wave-section">
+    <div class="ocean">
+      <div class="wave"></div>
+    </div>
+  </div>
+  <span class="anchor" id="divisi"></span>
+  <div class="anchor" id="divisi-pemda"></div>
+  <section class="filter-division container">
+    <button class="btn-pill active" id="btn-pemda" onclick="changeDivisionFilter('pemda')">Membentuk Karakter Anak</button>
+    <button class="btn-pill" id="btn-advo" onclick="changeDivisionFilter('advo')">Menjadi Orang Tua yang Baik</button>
+    <button class="btn-pill" id="btn-organ" onclick="changeDivisionFilter('organ')">Membangun Pola Asuh Anak</button>
+    <button class="btn-pill" id="btn-kesek" onclick="changeDivisionFilter('kesek')">Tips Parenting yang Baik</button>
+  </section>
+
+  <!-- Pemda -->
+  <div id="pemda">
+    <section class="divisi container" id="divisi-pemda">
+      <div class="divisi-left">
+        <img src="assets/Rectangle34.png" alt="Divisi Pemda 2022">
+      </div>
+      <div class="divisi-right">
+        <div class="divisi-item what-is-hmif">
+          <h2>Membentuk Karakter Anak</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit esse, eos sequi dolor aliquid similique mollitia repudiandae atque aliquam ratione animi dolorem eum id commodi dolorum eius provident tempora.</p>
+        </div>
+      </div>
+    </section>
+    <section class="program container" id="program-pemda">
+      <h2>Materi</h2>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">1. Pelatihan</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. Parenting 1</div>
+          <div class="program-card">
+            2. Parenting 2
+          </div>
+          <div class="program-card">
+            3. Parenting 3
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">2. Komunitas</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. Parenting 1
+          </div>
+          <div class="program-card">
+            2. E-Talk
+          </div>
+          <div class="program-card">
+            3. Parenting 3
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">3. Karakter Baik</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-title">4. Kelompok Belajar</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="anchor" id="structure-pemda"></div>
+    <section class="org-structure container">
+      <h2>Ilustrasi</span></h2>
+      <div class="org-structure-wrapper">
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+  <!-- ADVO -->
+  <div class="hide" id="advo">
+    <section class="divisi container" id="divisi-advo">
+      <div class="divisi-left">
+        <img src="assets/edu1.png" alt="Divisi Advokasi 2022">
+        <p>Menjadi Orang Tua yang Baik</p>
+      </div>
+      <div class="divisi-right">
+        <div class="divisi-item what-is-hmif">
+          <h2>Menjadi Orang Tua yang Baik</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit esse, eos sequi dolor aliquid similique mollitia repudiandae atque aliquam ratione animi dolorem eum id commodi dolorum eius provident tempora.</p>
+        </div>
+      </div>
+    </section>
+    <section class="program container" id="program-advo">
+      <h2>Materi</h2>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">1. ?????</div>
+          <div class="program-desc"><p>Lorem dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. ??????</div>
+          <div class="program-card">
+            2. ?????
+          </div>
+          <div class="program-card">
+            3. ?????????
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">2. ???????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. ????
+          </div>
+          <div class="program-card">
+            2. ???????
+          </div>
+          <div class="program-card">
+            3. ???????
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">3. ?????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-title">4. ????????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="anchor" id="structure-advo"></div>
+    <section class="org-structure container">
+      <h2>Ilustrasi</h2>
+      <div class="org-structure-wrapper">
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+  <!-- ORGAN -->
+  <div class="hide" id="organ">
+    <section class="divisi container" id="divisi-organ">
+      <div class="divisi-left">
+        <img src="assets/Rectangle32.png" alt="Divisi Organisasi 2022">
+        <p>Membangun Pola Asuh Anak</p>
+      </div>
+      <div class="divisi-right">
+        <div class="divisi-item what-is-hmif">
+          <h2>Membangun Pola Asuh Anak</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit esse, eos sequi dolor aliquid similique mollitia repudiandae atque aliquam ratione animi dolorem eum id commodi dolorum eius provident tempora.</p>
+        </div>
+      </div>
+    </section>
+    <section class="program container" id="program-organ">
+      <h2>Materi</h2>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">1. ?????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. ??????</div>
+          <div class="program-card">
+            2. ?????
+          </div>
+          <div class="program-card">
+            3. ?????????
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">2. ???????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. ????
+          </div>
+          <div class="program-card">
+            2. ???????
+          </div>
+          <div class="program-card">
+            3. ???????
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">3. ?????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-title">4. ????????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="anchor" id="structure-organ"></div>
+    <section class="org-structure container">
+      <h2>Ilustrasi</h2>
+      <div class="org-structure-wrapper">
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+      </div>
+     
+     
+    </section>
+  </div>
+
+  <!-- KESEK -->
+  <div class="hide" id="kesek">
+    <section class="divisi container" id="divisi-kesek">
+      <div class="divisi-left">
+        <img src="assets/Rectangle33.png" alt="Divisi Kesekretariatan 2022">
+        <p>Tips Parenting yang Baik</p>
+      </div>
+      <div class="divisi-right">
+        <div class="divisi-item what-is-hmif">
+          <h2>Tips Parenting yang Baik</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit esse, eos sequi dolor aliquid similique mollitia repudiandae atque aliquam ratione animi dolorem eum id commodi dolorum eius provident tempora.</p>
+        </div>
+      </div>
+    </section>
+    <section class="program container" id="program-kesek">
+      <h2>Materi</h2>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">1. ?????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. ??????</div>
+          <div class="program-card">
+            2. ?????
+          </div>
+          <div class="program-card">
+            3. ?????????
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">2. ???????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-card">
+            1. ????
+          </div>
+          <div class="program-card">
+            2. ???????
+          </div>
+          <div class="program-card">
+            3. ???????
+          </div>
+        </div>
+      </div>
+      <div class="program-wrapper">
+        <div class="program-item left">
+          <div class="program-title">3. ?????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+        <div class="program-item right">
+          <div class="program-title">4. ????????</div>
+          <div class="program-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse possimus pariatur totam dolore sapiente illo laborum aliquam ab explicabo quos, eum placeat velit doloribus. Tenetur nulla unde maxime non.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="anchor" id="structure-kesek"></div>
+    <section class="org-structure container">
+      <h2>Ilustrasi</h2>
+      <div class="org-structure-wrapper">
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+        <div class="structure-card">
+          <img src="assets/Rectangle31.png" alt="">
+          <h3>Karakter</h3>
+          <p></p>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
