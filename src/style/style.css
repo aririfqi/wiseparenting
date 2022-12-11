@@ -21,6 +21,11 @@
   background: var(--red);
   color: white;
 }
+
+html, body {
+  height: 100%;
+}
+
 body{
   overflow-x: hidden;
 }
@@ -44,16 +49,18 @@ a{
   display: inline-block;
   transition: all 100ms ease;
 }
-button{
+.btn-login{
   border: none;
-  padding: 1em  1.5em 1em 1.5em;
+  padding: 0.7em 1.5em;
   background-color: var(--blue);
   color: white;
   border-radius: 2em;
   cursor: pointer;
   font-size: 1em;
+  text-align: center;
 }
-button:hover{
+
+.btn-login:hover{
   background-color: var(--blue-hover);
   transition: all 300ms ease-in;
 }
@@ -120,6 +127,18 @@ header{
   justify-content: space-between;
   padding: 0.5em;
 }
+
+.header-login {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+}
 header a{
   font-weight: 300;
   color: black;
@@ -167,8 +186,13 @@ header ul, header .nav-list{
   align-items: center;
 }
 header li{
-  margin-right: 1.5em;
+  min-height: 40px;
+  margin: auto 1.5em auto auto;
   list-style: none;
+}
+header li a{
+  min-height: 40px;
+  padding: 7px 0px;
 }
 .hamburger, .close-hamburger {
   display: none;
@@ -772,7 +796,8 @@ button.next-gallery img:hover, button.before-gallery img:hover{
     display: none;
   }
   .logo{
-    height: 2.5em;
+    width: 40px;
+    height: 40px;
   }
   .container{
     padding-right: 1em;
@@ -827,6 +852,7 @@ button.next-gallery img:hover, button.before-gallery img:hover{
   }
   #nav-list, #nav-right{
     display: none;
+    min-height: 40px;
   }
   #nav-left{
     width: 100%;
@@ -839,9 +865,7 @@ button.next-gallery img:hover, button.before-gallery img:hover{
     width: 100%;
   }
   #nav-list li, #nav-list button{
-    margin-top: 2em;
-    padding-right: 1em;
-    padding-left: 1em;
+    margin-top: 1em;
     width: 100%;
   }
 
@@ -1254,4 +1278,133 @@ button.next-gallery img:hover, button.before-gallery img:hover{
   100% {
     margin-left: -100vw;
   }
+}
+
+/* login page */
+.login-register-container {
+  position: relative;
+  background: linear-gradient(180deg, #B7BAEA, rgba(183, 186, 234, 0));
+  height: 90%;
+  margin-top: 0;
+  padding: 3em;
+}
+
+.page-login-register{
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.login-register-radio{
+  display: inline-flex;
+  margin: 8px auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(18, 0, 92, 0.25);
+  width: 60%;
+  background: #F2FBFF;
+  
+}
+
+.section-radio {
+  display: none;
+}
+
+.section-label {
+  font-size: 1.5em;
+  padding: 12px 14px;
+  width: 50%;
+  text-align: center;
+  font-weight: 700;
+  color: #010A9B;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.section-label:not(:last-of-type) {
+  border-right: 5px solid #0e168a;
+}
+
+.section-radio:checked + .section-label {
+  background: #010A9B;
+  color: #E3E4FF;
+}
+
+.login-or-register {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: 3em auto;
+  background: #FDFEFF;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.header-page {
+  font-size: 2em;
+  margin: 15px auto;
+  font-weight: 600;
+  line-height: 100.5%;
+  letter-spacing: 0.023em;
+
+  color: #010A9B;
+
+  text-shadow: 0px 2px 4px rgba(10, 0, 73, 0.41);
+}
+
+.form {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-top: 2em;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100.5%;
+  color: #1100D9;
+} 
+
+.form-input {
+  border: none;
+  background: #DEE4F8;
+  border-radius: 8px;
+  padding: 15px 12px;
+}
+
+.form-input::placeholder {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100.5%;
+  letter-spacing: 0.023em;
+
+  color: #8B9CF0;
+}
+
+.btn-submit {
+  margin-top: 3em;
+  border: none;
+  padding: 15px;
+  background: linear-gradient(91.48deg, #424DF9 -0.41%, rgba(53, 73, 142, 0) 265.37%);
+  border-radius: 8px;
+  
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #424DF9;
+}
+
+.blank {
+  min-height: 150px;
 }

@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/script/index.js'),
+    login: path.resolve(__dirname, 'src/script/handle-login.js'),
     style: path.resolve(__dirname, 'src/style/style.css'),
   },
   output: {
@@ -25,29 +26,23 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   test: /\.html$/,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[name].[ext]',
-      //       },
-      //     },
-      //   ],
-      //   exclude: path.resolve(__dirname, 'src/index.html')
-      // },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/index.html'),
+      chunks: ['app'],
     }),
     new HtmlWebpackPlugin({
       filename: 'edukasi.html',
       template: path.resolve(__dirname, 'src/page/edukasi.html'),
       chunks: ['app'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'loginUser.html',
+      template: path.resolve(__dirname, 'src/page/loginUser.html'),
+      chunks: ['login'],
     }),
     new CopyWebpackPlugin({
       patterns: [
