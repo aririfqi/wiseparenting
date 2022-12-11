@@ -3,7 +3,7 @@ const createLoginForm = () => `
   <form action="" class="form" id="login-form">
     <label for="username-form" class="form-label">Username</label>
     <input type="text" class="form-input" id="username-form" placeholder="Type username">
-    <label for="username-form" class="form-label">Password</label>
+    <label for="password-form" class="form-label">Password</label>
     <input type="password" class="form-input" id="password-form" placeholder="Type password">
     <button type="submit" class="btn-submit" id="btn-submit-login">SUBMIT</button>
   </form>
@@ -14,10 +14,12 @@ const createRegisterForm = () => `
   <form action="" class="form" id="register-form">
     <label for="username-form" class="form-label">Username</label>
     <input type="text" class="form-input" id="username-form" placeholder="Type username">
-    <label for="username-form" class="form-label">Email</label>
+    <label for="email-form" class="form-label">Email</label>
     <input type="text" class="form-input" id="email-form" placeholder="Type email">
-    <label for="username-form" class="form-label">Password</label>
+    <label for="password-form" class="form-label">Password</label>
     <input type="password" class="form-input" id="password-form" placeholder="Type password">
+    <label for="confirm-password-form" class="form-label">Confirm password</label>
+    <input type="password" class="form-input" id="confirm-password-form" placeholder="Confirm password">
     <button type="submit" class="btn-submit" id="btn-submit-login">REGISTER</button>
   </form>
 `;
